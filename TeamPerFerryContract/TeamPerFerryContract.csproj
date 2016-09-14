@@ -43,6 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\Deck.cs" />
+    <Compile Include="DTOs\DockDTO.cs" />
+    <Compile Include="DTOs\FerryDTO.cs" />
+    <Compile Include="DTOs\FerryType.cs" />
+    <Compile Include="DTOs\MunicipalityDTO.cs" />
+    <Compile Include="DTOs\VehicleType.cs" />
+    <Compile Include="ETOs\FerryOverbookedEx.cs" />
+    <Compile Include="ETOs\InvalidBookingETO.cs" />
     <Compile Include="Interface\Contract.cs" />
     <Compile Include="DTOs\RouteDTO.cs" />
     <Compile Include="DTOs\DepartureDTO.cs" />
