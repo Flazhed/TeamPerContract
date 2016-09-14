@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TeamPerFerryContract.ETOs
 {
-    public class FerryOverbookedEx : InvalidBookingETO
+    public class DuplicatedBookingEx : InvalidBookingETO
     {
-        public FerryOverbookedEx(string message) : base(message)
+        public DuplicatedBookingEx(string message) : base(message)
         {
         }
     }
