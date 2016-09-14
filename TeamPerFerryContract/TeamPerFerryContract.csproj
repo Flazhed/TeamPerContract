@@ -43,7 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Interface\Contract.cs" />
+    <Compile Include="DTOs\RouteDTO.cs" />
+    <Compile Include="DTOs\DepartureDTO.cs" />
+    <Compile Include="DTOs\ReservationDTO.cs" />
+    <Compile Include="DTOs\VehicleDTO.cs" />
+    <Compile Include="DTOs\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
