@@ -15,6 +15,7 @@ namespace TeamPerFerryContract.Interface
         /// <param name="routeDTO">The ID on the route that the user wishes to travel with</param>
         /// <param name="startDate">The startpoint date for the interval the user wants to search in</param>
         /// <param name="endDate">The endpoint date for the interval the user wants to search in</param>
+        /// <exception cref="InvalidFormatETO">Thrown when the paramters(dates) are in a wrong format</exception>
         /// <returns>Returns a List of departures</returns>
         List<DepartureDTO> GetDepartures(long routeId, DateTime startDate, DateTime endDate);
 
@@ -25,7 +26,8 @@ namespace TeamPerFerryContract.Interface
         /// <param name="userName">The full name of the user making the reservation</param>
         /// <param name="vehicleDTO">VehicleDTO of the vehicle the user wants to travel in. This field will be null if the passenger is walking</param>
         /// <param name="amountPassengers">The amount of passengers that the reservation is made for</param>
-        /// <returns></returns>
+        /// <exception cref="InvalidBookingETO">Thrown when an invalid booking is made. Either FerryOverBookedEx or DuplicatedBookingEx</exception>
+        /// <returns>Returns a newly created ReservationDTO</returns>
         ReservationDTO BookReservation(long departureId, string userName, VehicleDTO vehicleDTO, int amountPassengers);
 
         /// <summary>
