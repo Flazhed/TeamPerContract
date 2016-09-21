@@ -57,6 +57,7 @@
     <Compile Include="DTOs\ReservationDTO.cs" />
     <Compile Include="DTOs\VehicleDTO.cs" />
     <Compile Include="DTOs\UserDTO.cs" />
+    <Compile Include="Interface\ContractV2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
