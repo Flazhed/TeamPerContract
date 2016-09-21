@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace TeamPerFerryContract.ETOs
 {
-    public class FerryOverbookedEx : InvalidBookingETO
+    public class InvalidFormatETO : SystemException
     {
-        public FerryOverbookedEx(string message) : base(message)
+        
+        public InvalidFormatETO(string message) : base(message)
         {
+
         }
     }
 }
